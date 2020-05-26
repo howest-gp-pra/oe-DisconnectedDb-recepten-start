@@ -22,7 +22,7 @@ namespace Recepten.Lib.Services
 
         static char huidigDecimaalTeken;
 
-        public List<Artikel> Artikelen { get; set; } 
+        public List<Artikel> Artikelen { get; set; }
 
         public TextDataArtikelen()
         {
@@ -58,52 +58,12 @@ namespace Recepten.Lib.Services
 
         public void SlaOp(Artikel opTeSlaan)
         {
-            if (opTeSlaan == null) throw new Exception("Geef een geldig artikel door om op te slaan");
-            else if (!BehoortObjectTotLijst(opTeSlaan)) Artikelen.Add(opTeSlaan);
-            else
-            {
-                int indexObject = GeefIndexInLijst(opTeSlaan);
-                Artikelen[indexObject] = opTeSlaan;
-            }
             SchrijfArtikelenNaarTextFile(FolderPad, BestandsNaam);
         }
 
         public void Verwijder(Artikel teVerwijderen)
         {
-            if (teVerwijderen != null && BehoortObjectTotLijst(teVerwijderen))
-            {
-                Artikelen.Remove(teVerwijderen);
-                SchrijfArtikelenNaarTextFile(FolderPad, BestandsNaam);
-            }
-            else throw new Exception("Geef een geldig artikel door om te verwijderen");
-        }
-
-        int GeefIndexInLijst(Artikel teChecken)
-        {
-            int indexTeCheckenInstance = -1;
-            for (int i = 0; i < Artikelen.Count; i++)
-            {
-                if (Artikelen[i].Id == teChecken.Id)
-                {
-                    indexTeCheckenInstance = i;
-                    break;
-                }
-            }
-            return indexTeCheckenInstance;
-        }
-
-        bool BehoortObjectTotLijst(Artikel teChecken)
-        {
-            bool gevonden = false;
-            foreach (Artikel instance in Artikelen)
-            {
-                if (instance.Id == teChecken.Id)
-                {
-                    gevonden = true;
-                    break;
-                }
-            }
-            return gevonden;
+            SchrijfArtikelenNaarTextFile(FolderPad, BestandsNaam);
         }
 
         List<Artikel> ZetArtikelArraysOmNaarObjecten(List<string[]> artikelArray, char decimaalTeken)
@@ -129,7 +89,6 @@ namespace Recepten.Lib.Services
             string pad = FolderPad + BestandsNaam;
             List<string[]> artikelLijst = ReadService.TxtFile_To_ListOfStringArrays(pad, Separator);
             Artikelen = ZetArtikelArraysOmNaarObjecten(artikelLijst, huidigDecimaalTeken);
-
         }
     }
 }
