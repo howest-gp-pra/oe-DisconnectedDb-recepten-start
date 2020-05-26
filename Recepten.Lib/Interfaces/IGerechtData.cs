@@ -15,7 +15,7 @@ namespace Recepten.Lib.Interfaces
 
         void LaadGerechten(IArtikelData dataArtikelen);
 
-        void SlaOp(Gerecht opTeSlaan);
+        void SlaOp(Gerecht opTeSlaan, bool isNieuw = false);
 
         void Verwijder(Gerecht teVerwijderen);
 

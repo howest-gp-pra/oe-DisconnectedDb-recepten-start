@@ -38,12 +38,13 @@ namespace Recepten.Lib.Services
 
         public void SlaOp(Gerecht opTeSlaan)
         {
-            SlaOpInGeheugen(opTeSlaan);
-            gekozenDataSource.SlaOp(opTeSlaan);
+            bool isNieuw = SlaOpInGeheugen(opTeSlaan);
+            gekozenDataSource.SlaOp(opTeSlaan, isNieuw);
         }
 
-        void SlaOpInGeheugen(Gerecht opTeSlaan)
+        bool SlaOpInGeheugen(Gerecht opTeSlaan)
         {
+            bool isNieuw = true;
             if (opTeSlaan == null) throw new Exception("Geef een geldig gerecht door om op te slaan");
 
             else if (!BehoortObjectTotLijst(opTeSlaan)) Gerechten.Add(opTeSlaan);
@@ -51,7 +52,9 @@ namespace Recepten.Lib.Services
             {
                 int indexObject = GeefIndexInLijst(opTeSlaan);
                 Gerechten[indexObject] = opTeSlaan;
+                isNieuw = false;
             }
+            return isNieuw;
         }
 
         public void VoegIngredientToe(Artikel toeTeVoegen, Gerecht gerecht)

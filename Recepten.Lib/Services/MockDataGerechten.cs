@@ -67,7 +67,7 @@ namespace Recepten.Lib.Services
             //Geen verdere opslag nodig
         }
 
-        public void SlaOp(Gerecht opTeSlaan)
+        public void SlaOp(Gerecht opTeSlaan, bool nietNodig)
         {
             //Geen verdere opslag nodig
         }

@@ -54,7 +54,7 @@ namespace Recepten.Lib.Services
             return omgezet;
         }
 
-        public void SlaOp(Gerecht opTeSlaan)
+        public void SlaOp(Gerecht opTeSlaan, bool nietNodig)
         {
             SchrijfGerechtenNaarTextFile(FolderPad, BestandsNaam);
         }
