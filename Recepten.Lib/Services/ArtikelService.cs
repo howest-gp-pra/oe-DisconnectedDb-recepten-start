@@ -40,19 +40,22 @@ namespace Recepten.Lib.Services
 
         public void SlaOp(Artikel opTeSlaan)
         {
-            SlaOpInGeheugen(opTeSlaan);
-            gekozenDataSource.SlaOp(opTeSlaan);
+            bool isNieuw = SlaOpInGeheugen(opTeSlaan);
+            gekozenDataSource.SlaOp(opTeSlaan, isNieuw);
         }
 
-        public void SlaOpInGeheugen(Artikel opTeSlaan)
+        public bool SlaOpInGeheugen(Artikel opTeSlaan)
         {
+            bool isNieuw = true;
             if (opTeSlaan == null) throw new Exception("Geef een geldig artikel door om op te slaan");
             else if (!BehoortObjectTotLijst(opTeSlaan, Artikelen)) Artikelen.Add(opTeSlaan);
             else
             {
                 int indexObject = GeefIndexInLijst(opTeSlaan, Artikelen);
                 Artikelen[indexObject] = opTeSlaan;
+                isNieuw = false;
             }
+            return isNieuw;
         }
 
         static int GeefIndexInLijst(Artikel teChecken, List<Artikel> artikelen)
