@@ -13,7 +13,7 @@ namespace Recepten.Lib.Interfaces
 
         void LaadArtikelen();
 
-        void SlaOp(Artikel opTeSlaan);
+        void SlaOp(Artikel opTeSlaan, bool isNieuw = false);
 
         void Verwijder(Artikel teVerwijderen);
 

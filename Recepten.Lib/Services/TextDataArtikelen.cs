@@ -56,7 +56,7 @@ namespace Recepten.Lib.Services
             WriteService.ListVanArrays_To_TextFile(artikelenOmgezet, folderPad, bestandsNaam, Separator.ToString());
         }
 
-        public void SlaOp(Artikel opTeSlaan)
+        public void SlaOp(Artikel opTeSlaan, bool nietNodig)
         {
             SchrijfArtikelenNaarTextFile(FolderPad, BestandsNaam);
         }

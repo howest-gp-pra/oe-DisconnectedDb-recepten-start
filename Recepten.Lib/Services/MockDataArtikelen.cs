@@ -17,7 +17,7 @@ namespace Recepten.Lib.Services
             LaadArtikelen();
         }
 
-        public void SlaOp(Artikel opTeSlaan)
+        public void SlaOp(Artikel opTeSlaan, bool nietNodig)
         {
             //Geen verdere actie vereist
         }
