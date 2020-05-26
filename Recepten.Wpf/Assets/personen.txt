@@ -1,0 +1,46 @@
+Andries;Saraatje;AALST;België;M;18
+Asselman;Wouter;BEERNEM;België;M;20
+Babaev;Thomas;BOOM;België;M;17
+Baetslé;Thibault;BRUGGE;België;M;20
+Bethleheem;Steven;BRUGGE;België;M;35
+Blondeel;Soraya;BRUGGE;België;M;21
+Boulanger;Yoshitje;DAMME;België;M;22
+Daeleman;Sasha;NICE;Frankrijk;M;21
+De Deygere;Sam;DENDERMONDE;België;M;23
+De Kezel;Ryan;DENDERMONDE;België;M;38
+De Leersnyder;Pim;DILBEEK;België;M;24
+DeCorte;Nikki;EEDE;Nederland;M;25
+Denys;Naut;EEKLO;België;M;23
+Devynck;Mohane;EVERGEM;België;M;33
+Dierickx;Michelle;EVERGEM;België;M;19
+Filippusson;Margot;GENT;België;M;20
+Gombert;Margo;GENT;België;M;18
+Gorteman;Maarten;GENT;België;M;21
+Gossye;Loicq;GENT;België;M;36
+Keersmaekers;Laurenzo;GERAARDSBERGEN;België;M;22
+Ledieu;Laurens;GOES;Nederland;M;23
+Lejeune;Kilian;HARELBEKE;België;M;21
+Meiresone;Keanu;HARELBEKE;België;M;31
+Michiels;Jordin;HOEILAART;België;M;17
+Moerman;Joachim;KAPELLEN;België;M;18
+Moeyaert;Jens;KNOKKE-HEIST;België;M;32
+Pauwelyn;Ilja;KORTEMARK;België;M;30
+Pluskota;Iben;KORTRIJK;België;M;33
+Pype;Hélène;KORTRIJK;België;M;48
+Roose;Hanna;LAARNE;België;M;34
+Stroobants;Ghizlane;LEDEGEM;België;M;35
+Van Brussel;Flore;MIDDELKERKE;België;M;33
+Van Buyten;Feline;OOSTENDE;België;M;43
+Van der Steen;Eric;OOSTKAMP;België;M;29
+Van Loo;Ellen;ROESELARE;België;M;53
+Van Ongeval;Delilah;ROOSDAAL;België;M;62
+Vandebosch;Dagmar;SINT-KRUIS (BRUGGE);België;M;22
+Vandendriessche;Charles;STADEN;België;M;20
+Vansteenkiste;Céleste;STEKENE;België;M;23
+Vercauteren;Camille;STEKENE;België;M;38
+Verdoodt;Bjarne;ST-NIKLAAS;België;M;24
+Vereecke;Ayisha;TUBIZE;België;M;25
+Verlinde;Arthur;VILVOORDE;België;M;23
+Vermeersch;Anton;WETTEREN;België;M;33
+Vervaeke;Antoine;WEVELGEM;België;M;19
+Wallays;Alexander;ZEEBRUGGE (BRUGGE);België;M;43
